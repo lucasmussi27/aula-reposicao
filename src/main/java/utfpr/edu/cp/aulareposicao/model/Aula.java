@@ -13,6 +13,7 @@ public class Aula implements Serializable {
   @Id @GeneratedValue(strategy = GenerationType.SEQUENCE)
   private Long id;
   private String conteudo;
+  //Como se trata de um tipo nao primitivo, deveria ser colocado uma forma de mostrar ao banco como agir com essa variavel
   private Professor professor;
   @OneToMany
   private List<Reposicao> reposicoes;
